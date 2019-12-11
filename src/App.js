@@ -3,6 +3,7 @@ import "./App.css";
 import { Container, Row } from "reactstrap";
 import React, {useEffect, useState} from "react";
 
+import ContentBox from "./components/ContentBox";
 import NavBar from "./components/NavBar";
 import Photo from "./components/Photo";
 import axios from "axios";
@@ -34,10 +35,14 @@ function App() {
     
   return (
     <div className="App">
-    <NavBar photoOfTheDay={photoOfTheDay}
+    <NavBar 
+      photoOfTheDay={photoOfTheDay}
     />    
     <Photo 
-    photoOfTheDay={photoOfTheDay}
+      photoOfTheDay={photoOfTheDay}
+    />
+    <ContentBox 
+      explanation={photoOfTheDay.explanation}
     />
     
     </div>
