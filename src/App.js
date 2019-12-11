@@ -20,11 +20,11 @@ function App() {
       .catch(error =>{
         console.log("There is an error in the Axios call: ", error)
         setPhotoOfTheDay({
-        copyright: "https://images.unsplash.com/photo-1568920011103-b8c1c37857d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+        copyright: "Markus Spiske",
         title: "404 Photo Not Found",
         date: "",
         explanation: "You have selected an invalid date.",
-        hdurl: "",
+        hdurl: "https://images.unsplash.com/photo-1568920011103-b8c1c37857d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
         media_type: "image",
         service_version:"yes",
         url: "https://images.unsplash.com/photo-1568920011103-b8c1c37857d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" 
