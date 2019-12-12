@@ -1,11 +1,9 @@
 import "./App.css";
 
-import { Container, Row } from "reactstrap";
 import React, {useEffect, useState} from "react";
 
-import ContentBox from "./components/ContentBox";
-import NavBar from "./components/NavBar";
-import Photo from "./components/Photo";
+import { Container } from "reactstrap";
+import Photo from "./components/Photo"
 import axios from "axios";
 
 // &date=2019-10-30 specific date
@@ -36,17 +34,19 @@ function App() {
   return (
     <div className="App">
     <Container>
-    
-    <NavBar 
-      photoOfTheDay={photoOfTheDay}
-    />    
+    <h1>Here is the NASA Photo of The Day!</h1>
+    <h1>Date: {photoOfTheDay.date}</h1>
+    <div className="entry">
     <Photo 
-      photoOfTheDay={photoOfTheDay}
+    className="Images" 
+    title={photoOfTheDay.title}
+    copyright = {photoOfTheDay.copyright}
+    hdurl={photoOfTheDay.hdurl}
+    explanation={photoOfTheDay.explanation}
+    url={photoOfTheDay.url}
     />
-    <ContentBox 
-      explanation={photoOfTheDay.explanation}
-    />
-    </Container>
+  </div>
+   </Container>
     </div>
   );
 }
