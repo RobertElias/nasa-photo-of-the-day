@@ -30,6 +30,7 @@
   align-items: flex-start;
   line-height: 1.5rem;
   text-align: justify;
+ 
 }
 
 
@@ -49,6 +50,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {

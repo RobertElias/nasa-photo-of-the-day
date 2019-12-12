@@ -36,6 +36,7 @@ function App() {
     <Container>
     <h1>Here is the NASA Photo of The Day!</h1>
     <h1>Date: {photoOfTheDay.date}</h1>
+    
     <div className="entry">
     <Photo 
     className="Images" 

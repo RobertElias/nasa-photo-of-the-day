@@ -14,7 +14,7 @@ const Photo = (props) => {
   return(
     <Card className="Card">
     <CardImg
-      height="25%"
+      height="30%"
       width="100%"
       src={props.hdurl}
       alt="Card image cap"
@@ -22,9 +22,9 @@ const Photo = (props) => {
     <CardBody className="cardbody">
     <CardTitle>Title: {props.title}</CardTitle>
 
-{/*<CardSubtitle>{props.url}</CardSubtitle><br></br>*/}
+
       <CardSubtitle>CopyRight: {props.copyright}</CardSubtitle><br></br>
-      <CardSubtitle>{props.description}</CardSubtitle>
+      
       <CardSubtitle>Explanation: {props.explanation}</CardSubtitle><br></br>
       
     </CardBody>
