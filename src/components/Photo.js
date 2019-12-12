@@ -26,7 +26,7 @@ const Photo = (props) => {
       <CardSubtitle>CopyRight: {props.copyright}</CardSubtitle><br></br>
       <CardSubtitle>{props.description}</CardSubtitle>
       <CardSubtitle>Explanation: {props.explanation}</CardSubtitle><br></br>
-      <Button>Space X</Button>
+      
     </CardBody>
   </Card>
   )
