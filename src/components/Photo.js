@@ -12,16 +12,23 @@ import React from 'react'
 
 const Photo = (props) => {
   return(
-    <div>
-      <div 
-        className="photoHolder"
-      >
-        <img
-          src={props.photoOfTheDay.url} 
-          alt={props.photoOfTheDay.title} 
-        />
-      </div>
-    </div>
+    <Card className="Card">
+    <CardImg
+      height="25%"
+      width="100%"
+      src={props.hdurl}
+      alt="Card image cap"
+    />
+    <CardBody className="cardbody">
+    <CardTitle>Title: {props.title}</CardTitle>
+
+{/*<CardSubtitle>{props.url}</CardSubtitle><br></br>*/}
+      <CardSubtitle>CopyRight: {props.copyright}</CardSubtitle><br></br>
+      <CardSubtitle>{props.description}</CardSubtitle>
+      <CardSubtitle>Explanation: {props.explanation}</CardSubtitle><br></br>
+      <Button>Space X</Button>
+    </CardBody>
+  </Card>
   )
 }
 
