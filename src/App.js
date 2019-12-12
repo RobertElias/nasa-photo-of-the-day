@@ -35,6 +35,8 @@ function App() {
     
   return (
     <div className="App">
+    <Container>
+    
     <NavBar 
       photoOfTheDay={photoOfTheDay}
     />    
@@ -44,7 +46,7 @@ function App() {
     <ContentBox 
       explanation={photoOfTheDay.explanation}
     />
-    
+    </Container>
     </div>
   );
 }

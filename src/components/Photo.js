@@ -1,3 +1,13 @@
+import {
+  Button,
+  Card,
+  CardBody,
+  CardImg,
+  CardSubtitle,
+  CardTitle,
+  Col
+} from "reactstrap";
+
 import React from 'react'
 
 const Photo = (props) => {
@@ -11,13 +21,6 @@ const Photo = (props) => {
           alt={props.photoOfTheDay.title} 
         />
       </div>
-      {props.photoOfTheDay.copyright ? (
-        <p className="photoCopyright">
-          {props.photoOfTheDay.title}
-        </p>
-      ):(
-        <></>
-      )}
     </div>
   )
 }

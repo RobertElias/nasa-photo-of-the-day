@@ -5,7 +5,6 @@ const ContentBox = (props) => {
         return (
             <section className="contentBox">
             <article className="explanation">{props.explanation}</article>
-            
             </section>
         )
     }
