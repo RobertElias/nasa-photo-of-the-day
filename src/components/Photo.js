@@ -21,12 +21,8 @@ const Photo = (props) => {
     />
     <CardBody className="cardbody">
     <CardTitle>Title: {props.title}</CardTitle>
-
-
       <CardSubtitle>CopyRight: {props.copyright}</CardSubtitle><br></br>
-      
       <CardSubtitle>Explanation: {props.explanation}</CardSubtitle><br></br>
-      
     </CardBody>
   </Card>
   )
