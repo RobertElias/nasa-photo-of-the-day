@@ -1,6 +1,39 @@
 .App {
+  display: flex;
   text-align: center;
+  justify-content: Center;
+  background: rgba(22, 76, 236, 0.87);
 }
+
+.entry{
+  /* border: 1px solid red; */
+  text-align: center;
+  justify-content: Center;
+  align-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  background: rgba(190, 32, 32, 0.472);
+ 
+}
+
+.Card{
+  width: 500px;
+}
+.cardbody{
+  width: 500px;
+  height: 800px;
+  background-color: silver;
+  display: inline-block;
+  align-content: left;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5rem;
+  text-align: justify;
+ 
+}
+
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -17,6 +50,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
